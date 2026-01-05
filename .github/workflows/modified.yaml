@@ -32,7 +32,6 @@ jobs:
 
   test:
     name: Test
-    needs: lint
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
