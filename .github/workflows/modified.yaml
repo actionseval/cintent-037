@@ -44,13 +44,13 @@ jobs:
     - name: Checkout the repository
       uses: actions/checkout@v3
 
-    # CINTENT >> INSERT_CINTENT
-    - uses: JavidDitty/setup-cintent@64faaac1333aabc2e0a00af6109b48ec4d8071bf
-
     - name: Set up Python ${{ matrix.python-version }}
       uses: actions/setup-python@v4
       with:
         python-version: ${{ matrix.python-version }}
+
+    # CINTENT >> INSERT_CINTENT
+    - uses: JavidDitty/setup-cintent@3e5b2faf83a2ad32c22a1cd0f86f5f20ea53a5ab
 
     - name: Install dependencies
       run: |
